@@ -25,7 +25,7 @@ export default function Home() {
       </p>
       <div className="flex">
         <div
-          className="m-auto w-full h-full flex min-h-[90vh] items-end justify-center"
+          className="m-auto w-full h-full flex min-h-[80vh] items-end justify-center"
           onMouseDown={() => {
             setStatus(false);
           }}
