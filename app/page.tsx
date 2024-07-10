@@ -7,18 +7,6 @@ export default function Home() {
   const [status, setStatus] = useState<Boolean>(true);
   const [count, setCount] = useState(0);
 
-  document.addEventListener("dragstart", (event: DragEvent) => {
-    event.preventDefault();
-  });
-
-  document.addEventListener(
-    "contextmenu",
-    (event: MouseEvent) => {
-      event.preventDefault();
-    },
-    false
-  );
-
   return (
     <main className="flex min-h-screen items-center justify-center">
       <div
