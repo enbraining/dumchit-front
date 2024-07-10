@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
+import DownImage from "/down.png";
+import UpImage from "/up.png";
 
 export default function Home() {
   const [status, setStatus] = useState<Boolean>(true);
@@ -35,9 +37,9 @@ export default function Home() {
           }}
         >
           {status ? (
-            <Image src={"/up.png"} alt="up" width={1000} height={1000} />
+            <Image src={UpImage} alt="up" width={1000} height={1000} />
           ) : (
-            <Image src={"/down.png"} alt="up" width={1000} height={1000} />
+            <Image src={DownImage} alt="up" width={1000} height={1000} />
           )}
         </div>
       </div>
