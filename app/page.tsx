@@ -20,10 +20,12 @@ export default function Home() {
         ref={audioRef as MutableRefObject<HTMLAudioElement>}
         src="/sound.mp3"
       ></audio>
-      <p className="text-center p-10 text-2xl font-semibold">{count}</p>
+      <p className="text-center p-10 text-6xl font-semibold text-white">
+        {count}
+      </p>
       <div className="flex">
         <div
-          className="m-auto w-full h-full flex min-h-[80vh] items-end justify-center"
+          className="m-auto w-full h-full flex min-h-[90vh] items-end justify-center"
           onMouseDown={() => {
             setStatus(false);
           }}
@@ -33,9 +35,9 @@ export default function Home() {
           }}
         >
           {status ? (
-            <Image src={"/up.png"} alt="up" width={400} height={400} />
+            <Image src={"/up.png"} alt="up" width={1000} height={1000} />
           ) : (
-            <Image src={"/down.png"} alt="up" width={400} height={400} />
+            <Image src={"/down.png"} alt="up" width={1000} height={1000} />
           )}
         </div>
       </div>
