@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
-import DownImage from "/down.png";
-import UpImage from "/up.png";
+import DownImage from "../public/down.png";
+import UpImage from "../public/up.png";
 
 export default function Home() {
   const [status, setStatus] = useState<Boolean>(true);
