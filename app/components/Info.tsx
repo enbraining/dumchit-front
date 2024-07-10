@@ -1,5 +1,3 @@
-export default function Info(){
-    return (
-        
-    )
+export default function Info() {
+  return <main></main>;
 }
