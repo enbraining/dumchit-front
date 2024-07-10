@@ -35,6 +35,13 @@ export default function Home() {
             setStatus(true);
             setCount(count + 1);
           }}
+          onTouchStart={() => {
+            setStatus(false);
+          }}
+          onTouchEnd={() => {
+            setStatus(true);
+            setCount(count + 1);
+          }}
         >
           {status ? (
             <Image src={UpImage} alt="up" width={1000} height={1000} />
