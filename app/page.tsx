@@ -28,10 +28,10 @@ export default function Home() {
           className="m-auto w-full h-full flex min-h-[80vh] items-end justify-center"
           onMouseDown={() => {
             setStatus(false);
+            setCount(count + 1);
           }}
           onMouseUp={() => {
             setStatus(true);
-            setCount(count + 1);
           }}
         >
           {status ? (
