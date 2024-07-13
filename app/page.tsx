@@ -22,11 +22,15 @@ export default function Home() {
 
   const handleMouseDown = useCallback(() => {
     setStatus(false);
-    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount: number) => prevCount + 1);
   }, []);
 
   const handleMouseUp = useCallback(() => {
     setStatus(true);
+  }, []);
+
+  const handleTouchStart = useCallback(() => {
+    setStatus(false);
   }, []);
 
   return (
@@ -43,12 +47,14 @@ export default function Home() {
           className="m-auto w-full h-full flex min-h-[80vh] items-end justify-center"
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
+          onTouchStart={handleTouchStart}
         >
           <Image
             src={status ? "/up.png" : "/down.png"}
             alt={status ? "up" : "down"}
             width={1000}
             height={1000}
+            style={{ width: "auto", height: "auto" }}
             priority
           />
         </div>
